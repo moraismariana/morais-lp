@@ -46,3 +46,9 @@ $spacing-3: 20px;
     }
   }
 }
+
+@mixin responsive($tela) {
+  @media (max-width: $tela) {
+    @content;
+  }
+}

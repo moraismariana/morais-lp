@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Morais | Desenvolvimento de sites</title>
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./libs/splide-4.1.3/css/splide.min.css">
     <link rel="stylesheet" href="./style/css/style.css">
 
     <!-- typography -->
@@ -42,9 +44,27 @@
         <p>Eu sou uma desenvolvedora web autônoma e estou aqui para te ajudar a explorar novos horizontes e trazer mais <strong> visibilidade, autenticidade e inovação </strong> para a sua marca.</p>
     </section>
 
-    <section id="portfolio">
+    <section id="portfolio" class="splide">
         <h2>Portfolio</h2>
-        <img src="./img/portfolio/portfolio.jpg" alt="Portfolio">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <div class="image-box">
+                        <img src="./img/portfolio/image1.jpg">
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="image-box">
+                        <img src="./img/portfolio/image2.jpg">
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="image-box">
+                        <img src="./img/portfolio/image3.jpg">
+                    </div>
+                </li>
+            </ul>
+        </div>
     </section>
 
     <section id="servicos">
@@ -119,6 +139,8 @@
         </div>
     </footer>
 
+    <script src="./libs/splide-4.1.3/js/splide.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
