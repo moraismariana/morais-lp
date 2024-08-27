@@ -1,0 +1,12 @@
+#portfolio {
+  h2 {
+    @include title-2;
+    text-align: center;
+    @include mbottom-2;
+  }
+  img {
+    border-radius: 10px;
+    @include align-div;
+  }
+  @include mbottom-1;
+}

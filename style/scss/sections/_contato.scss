@@ -1,0 +1,34 @@
+#contato {
+  background-image: url("../../../img/contato.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: $spacing-1;
+  padding-bottom: $spacing-1;
+  @include mbottom-1;
+  h1 {
+    @include title-1(40px);
+    color: $w;
+    span {
+      margin-top: $spacing-3;
+    }
+  }
+  div {
+    @include container;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  a {
+    background-color: $w;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: px-rem(20px);
+    padding: 0.4em 1em;
+    border-radius: 50px;
+    img {
+      max-width: 14px;
+    }
+  }
+}

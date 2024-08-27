@@ -1,0 +1,23 @@
+header {
+  @include container;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    ul {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      .nav-item-contato {
+        border: 1px solid rgba(55, 55, 55, 0.64);
+        border-radius: 50px;
+        padding: 0.4em 1em;
+      }
+    }
+    img {
+      max-width: 64px;
+    }
+  }
+}

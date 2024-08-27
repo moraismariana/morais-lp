@@ -1,0 +1,19 @@
+#inicio {
+  background-image: url("../../../img/inicio.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  div {
+    @include container;
+    // 100vh - tamanho do header
+    height: calc(100vh - 92.5px);
+    color: $w;
+    h1 {
+      @include title-1;
+      text-align: center;
+      position: relative;
+      top: calc(50% - 92.5px);
+      // transform: translateY(-50%);
+    }
+  }
+  @include mbottom-1;
+}

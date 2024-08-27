@@ -1,0 +1,30 @@
+@mixin title-1($tamanho: 56px) {
+  font-size: px-rem($tamanho);
+  font-weight: 500;
+  span {
+    display: block;
+    font-size: 0.85em;
+  }
+}
+
+@mixin title-2 {
+  font-size: px-rem(32px);
+  font-weight: 600;
+}
+
+@mixin title-3 {
+  font-size: px-rem(24px);
+  font-weight: 600;
+}
+
+@mixin text-1 {
+  font-family: "Outfit";
+  font-size: px-rem(20px);
+  font-weight: 300;
+}
+
+@mixin text-2 {
+  font-family: "Outfit";
+  font-size: px-rem(18px);
+  font-weight: 300;
+}
