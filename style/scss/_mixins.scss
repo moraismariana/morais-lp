@@ -2,32 +2,19 @@
 @mixin container {
   box-sizing: border-box;
   max-width: 1200px;
-  padding: 0 20px;
+  padding: 0 60px;
   margin-left: auto;
   margin-right: auto;
+  @include screen(notebook-s) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 // ALIGN-DIV
 @mixin align-div {
   margin-left: auto;
   margin-right: auto;
-}
-
-// ESPAÇAMENTOS
-$spacing-1: 80px;
-$spacing-2: 40px;
-$spacing-3: 20px;
-
-@mixin mbottom-1 {
-  margin-bottom: $spacing-1;
-}
-
-@mixin mbottom-2 {
-  margin-bottom: $spacing-2;
-}
-
-@mixin mbottom-3 {
-  margin-bottom: $spacing-3;
 }
 
 // RESPONSIVIDADE
@@ -40,8 +27,12 @@ $spacing-3: 20px;
     @media (max-width: 768px) {
       @content;
     }
-  } @else if $tela == "laptop" {
+  } @else if $tela == "notebook-s" {
     @media (max-width: 1024px) {
+      @content;
+    }
+  } @else if $tela == "notebook-m" {
+    @media (max-width: 1300px) {
       @content;
     }
   }
@@ -50,5 +41,36 @@ $spacing-3: 20px;
 @mixin responsive($tela) {
   @media (max-width: $tela) {
     @content;
+  }
+}
+
+// ESPAÇAMENTOS
+$spacing-1: px-rem(80px);
+$spacing-2: px-rem(40px);
+$spacing-3: px-rem(20px);
+
+// primeira media-query (notebook-s)
+$spacing-1-2: px-rem(60px);
+$spacing-2-2: px-rem(30px);
+$spacing-3-2: px-rem(16px);
+
+@mixin mbottom-1 {
+  margin-bottom: $spacing-1;
+  @include screen(notebook-s) {
+    margin-bottom: $spacing-1-2;
+  }
+}
+
+@mixin mbottom-2 {
+  margin-bottom: $spacing-2;
+  @include screen(notebook-s) {
+    margin-bottom: $spacing-2-2;
+  }
+}
+
+@mixin mbottom-3 {
+  margin-bottom: $spacing-3;
+  @include screen(notebook-s) {
+    margin-bottom: $spacing-3-2;
   }
 }

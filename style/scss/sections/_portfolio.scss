@@ -10,7 +10,7 @@
 .image-box {
   max-width: 60vw;
   height: 70vh;
-  @include responsive(1300px) {
+  @include screen(notebook-m) {
     max-width: 70vw;
     height: 80vh;
   }

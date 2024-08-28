@@ -21,10 +21,26 @@
   font-family: "Outfit";
   font-size: px-rem(20px);
   font-weight: 300;
+  @include screen(notebook-s) {
+    font-size: px-rem(18px);
+  }
 }
 
 @mixin text-2 {
   font-family: "Outfit";
   font-size: px-rem(18px);
   font-weight: 300;
+  @include screen(notebook-s) {
+    font-size: px-rem(16px);
+  }
+}
+
+@mixin nav-text {
+  font-family: "Urbanist";
+  font-size: px-rem(16px);
+  font-weight: 400;
+  &:hover {
+    // font-weight: 500;
+    color: $c3;
+  }
 }

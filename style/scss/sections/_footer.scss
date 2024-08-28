@@ -7,6 +7,9 @@ footer {
       padding-bottom: $spacing-3;
       @include align-div;
       max-width: 64px;
+      @include screen(notebook-m) {
+        max-width: 60px;
+      }
     }
     & > p {
       padding-top: $spacing-3;

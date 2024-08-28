@@ -15,9 +15,15 @@ header {
         border-radius: 50px;
         padding: 0.4em 1em;
       }
+      a {
+        @include nav-text;
+      }
     }
     img {
       max-width: 64px;
+      @include screen(notebook-m) {
+        max-width: 60px;
+      }
     }
   }
 }

@@ -6,13 +6,22 @@
     @include container;
     // 100vh - tamanho do header
     height: calc(100vh - 92.5px);
+    @include screen(notebook-m) {
+      height: calc(100vh - 88.5px);
+    }
     color: $w;
     h1 {
       @include title-1;
       text-align: center;
       position: relative;
       top: calc(50% - 92.5px);
-      // transform: translateY(-50%);
+      @include screen(notebook-m) {
+        top: calc(50% - 80.5px);
+        font-size: px-rem(48px);
+      }
+      @include screen(notebook-s) {
+        font-size: px-rem(40px);
+      }
     }
   }
   @include mbottom-1;

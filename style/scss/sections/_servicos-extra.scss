@@ -32,6 +32,9 @@
       @include text-2;
       max-width: 50ch;
     }
+    @include screen(notebook-s) {
+      padding: 40px;
+    }
   }
   .servicos-extra-item:nth-of-type(2),
   .servicos-extra-item:nth-of-type(4) {

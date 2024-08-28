@@ -12,6 +12,9 @@
     gap: 60px;
     // max-width: fit-content;
     @include align-div;
+    @include screen(notebook-s) {
+      gap: 40px;
+    }
     h3 {
       @include title-3;
       @include mbottom-3;
