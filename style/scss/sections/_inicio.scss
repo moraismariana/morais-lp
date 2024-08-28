@@ -2,6 +2,7 @@
   background-image: url("../../../img/inicio.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   div {
     @include container;
     // 100vh - tamanho do header
@@ -28,6 +29,10 @@
       @include screen(tablet) {
         top: 50%;
         transform: translateY(-50%);
+        font-size: px-rem(37px);
+      }
+      @include screen(mobile) {
+        font-size: px-rem(29px);
       }
     }
   }
