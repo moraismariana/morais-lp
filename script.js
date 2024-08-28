@@ -30,3 +30,17 @@ const splideOptions = {
 };
 
 new Splide(".splide", splideOptions).mount();
+
+// MENU MOBILE
+function menuShow() {
+  let menuMobile = document.querySelector(".mobile-menu");
+  let header = document.querySelector("header");
+  menuMobile.classList.toggle("none");
+  header.classList.toggle("active");
+}
+
+document.querySelectorAll(".mobile-menu a").forEach((link) => {
+  link.addEventListener("click", function () {
+    menuShow();
+  });
+});

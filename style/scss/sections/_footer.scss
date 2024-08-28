@@ -10,6 +10,9 @@ footer {
       @include screen(notebook-m) {
         max-width: 60px;
       }
+      @include screen(tablet) {
+        max-width: 52px;
+      }
     }
     & > p {
       padding-top: $spacing-3;

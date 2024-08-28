@@ -6,10 +6,13 @@
     @include container;
     // 100vh - tamanho do header
     height: calc(100vh - 92.5px);
+    color: $w;
     @include screen(notebook-m) {
       height: calc(100vh - 88.5px);
     }
-    color: $w;
+    @include screen(tablet) {
+      height: 100vh;
+    }
     h1 {
       @include title-1;
       text-align: center;
@@ -21,6 +24,10 @@
       }
       @include screen(notebook-s) {
         font-size: px-rem(40px);
+      }
+      @include screen(tablet) {
+        top: 50%;
+        transform: translateY(-50%);
       }
     }
   }
