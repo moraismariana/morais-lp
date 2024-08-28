@@ -21,10 +21,14 @@ const splideOptions = {
       fixedHeight: "80vh",
     },
     768: {
-      fixedWidth: screenWidth - 24,
+      fixedWidth: screenWidth,
       fixedHeight: "70vh",
       drag: true,
       arrows: false,
+      gap: "-10px",
+    },
+    480: {
+      fixedHeight: "60vh",
     },
   },
 };

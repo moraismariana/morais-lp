@@ -16,8 +16,11 @@
   }
   @include screen(tablet) {
     @include align-div;
-    max-width: calc(100%);
+    max-width: calc(100% - 26px);
     height: 70vh;
+  }
+  @include screen(tablet) {
+    height: 60vh;
   }
   img {
     border-radius: 10px;
