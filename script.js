@@ -22,7 +22,7 @@ const splideOptions = {
     },
     768: {
       fixedWidth: screenWidth - 24,
-      fixedHeight: "500px",
+      fixedHeight: "70vh",
       drag: true,
       arrows: false,
     },

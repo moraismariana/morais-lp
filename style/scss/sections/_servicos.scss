@@ -23,5 +23,9 @@
       @include text-2;
       //   max-width: 24ch;
     }
+
+    @include screen(tablet) {
+      grid-template-columns: 1fr;
+    }
   }
 }
