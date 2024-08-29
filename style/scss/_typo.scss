@@ -21,6 +21,10 @@
 @mixin title-3 {
   font-size: px-rem(24px);
   font-weight: 600;
+  @include screen(mobile) {
+    // font-weight: 500;
+    font-size: px-rem(21px);
+  }
 }
 
 @mixin text-1 {
