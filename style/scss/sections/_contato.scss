@@ -49,9 +49,9 @@
     justify-content: space-between;
     @include screen(mobile) {
       flex-direction: column;
-      gap: 24px;
+      gap: 28px;
       align-items: flex-start;
-      padding-left: 40px;
+      // padding-left: 40px;
     }
   }
   position: relative;
