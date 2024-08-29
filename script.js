@@ -12,7 +12,6 @@ function verificarLargura() {
   if (window.innerWidth <= 768) {
     ajusteTamanho();
     window.addEventListener("resize", ajusteTamanho);
-    console.log(window.innerWidth);
   }
 }
 
