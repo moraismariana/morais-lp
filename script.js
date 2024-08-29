@@ -1,7 +1,11 @@
 // Altura da seção inicial
 function ajusteTamanho() {
   const sectionInicial = document.querySelector("#inicio div");
-  sectionInicial.style.height = `${window.innerHeight}px`;
+  sectionInicial.style.setProperty(
+    "height",
+    `${window.innerHeight}px`,
+    "important"
+  );
 }
 
 function verificarLargura() {
