@@ -12,7 +12,7 @@
       height: calc(100vh - 88.5px);
     }
     @include screen(tablet) {
-      height: 100svh;
+      height: 100vh;
     }
     h1 {
       @include title-1;
