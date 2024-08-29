@@ -1,3 +1,19 @@
+// Altura da seção inicial
+function ajusteTamanho() {
+  const sectionInicial = document.querySelector("#inicio div");
+  sectionInicial.style.height = `${window.innerHeight}px`;
+}
+
+function verificarLargura() {
+  if (window.innerWidth <= 768) {
+    ajusteTamanho();
+    window.addEventListener("resize", ajusteTamanho);
+    console.log(window.innerWidth);
+  }
+}
+
+window.addEventListener("load", verificarLargura);
+
 // SLIDER
 let screenWidth = window.innerWidth;
 const splideOptions = {
