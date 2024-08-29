@@ -11,6 +11,7 @@
     grid-auto-flow: dense;
     @include screen(tablet) {
       grid-template-columns: 1fr;
+      gap: $spacing-2;
       @include container;
     }
   }
@@ -43,7 +44,7 @@
       padding: 40px;
     }
     @include screen(tablet) {
-      padding: $spacing-2-2 0;
+      padding: 0;
     }
   }
   .servicos-extra-item:nth-of-type(2),

@@ -1,3 +1,8 @@
+// LOADER
+window.addEventListener("load", function () {
+  document.body.classList.add("loaded");
+});
+
 // SLIDER
 let screenWidth = window.innerWidth;
 const splideOptions = {
