@@ -69,8 +69,5 @@
     @include screen(notebook-s) {
       font-size: px-rem(18px);
     }
-    @include screen(mobile) {
-      align-self: center;
-    }
   }
 }
