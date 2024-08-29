@@ -6,7 +6,7 @@
   div {
     @include container;
     // 100vh - tamanho do header
-    height: calc(100vh - 92.5px);
+    height: calc(100vh - 92px);
     color: $w;
     @include screen(notebook-m) {
       height: calc(100vh - 88.5px);

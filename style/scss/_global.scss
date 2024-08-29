@@ -47,3 +47,32 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+
+// transição fade in
+.transition-element {
+  transform: translateY(20px);
+  opacity: 0;
+  transition: 1s ease;
+}
+
+.transition-element--visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+// transição inicio
+.transition-inicio {
+  animation-name: fade-in;
+  animation-duration: 1s;
+}
+
+@keyframes fade-in {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

@@ -1,3 +1,23 @@
+// TRANSIÇÃO
+const transitionElement = document.querySelectorAll(".transition-element");
+
+document.addEventListener("scroll", function () {
+  transitionElement.forEach((element) => {
+    if (isInView(element)) {
+      element.classList.add("transition-element--visible");
+    }
+  });
+});
+
+function isInView(element) {
+  const rect = element.getBoundingClientRect();
+  return (
+    rect.bottom > 0 &&
+    rect.top <
+      (window.innerHeight - 150 || document.documentElement.clientHeight - 150)
+  );
+}
+
 // SLIDER
 let screenWidth = window.innerWidth;
 const splideOptions = {
