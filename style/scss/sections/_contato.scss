@@ -5,6 +5,14 @@
   background-size: cover;
   padding-top: $spacing-1;
   padding-bottom: $spacing-1;
+  @include screen(notebook-s) {
+    padding-top: $spacing-1-2;
+    padding-bottom: $spacing-1-2;
+  }
+  @include screen(mobile) {
+    padding-top: 48px;
+    padding-bottom: $spacing-1-2;
+  }
   @include mbottom-1;
   h1 {
     @include title-1(40px);
@@ -14,6 +22,9 @@
       @include screen(notebook-s) {
         margin-top: $spacing-3-2;
       }
+      @include screen(mobile) {
+        margin-top: 10px;
+      }
     }
     @include screen(notebook-m) {
       font-size: px-rem(38px);
@@ -21,13 +32,26 @@
     @include screen(notebook-s) {
       font-size: px-rem(32px);
     }
+    @include screen(tablet) {
+      font-size: px-rem(25px);
+    }
+    @include screen(mobile) {
+      text-align: center;
+      font-size: px-rem(27px);
+      margin-bottom: 32px;
+    }
   }
   div {
-    @include container;
     display: flex;
+    gap: 20px;
+    @include container;
     align-items: center;
     justify-content: space-between;
+    @include screen(mobile) {
+      display: block;
+    }
   }
+  position: relative;
   a {
     background-color: $w;
     display: flex;
@@ -41,6 +65,12 @@
     }
     @include screen(notebook-s) {
       font-size: px-rem(18px);
+    }
+    @include screen(mobile) {
+      position: absolute;
+      bottom: 38px;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 }

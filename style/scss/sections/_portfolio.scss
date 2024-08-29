@@ -16,10 +16,10 @@
   }
   @include screen(tablet) {
     @include align-div;
-    max-width: calc(100% - 26px);
+    max-width: calc(100vw - 48px);
     height: 70vh;
   }
-  @include screen(tablet) {
+  @include screen(mobile) {
     height: 60vh;
   }
   img {
@@ -37,7 +37,7 @@
   border-radius: 0%;
   border-radius: 20px;
   transition: 0.3s;
-  @include screen(mobile) {
+  @include screen(tablet) {
     height: 4px;
   }
 }
@@ -49,7 +49,7 @@
   border-radius: 20px;
   transform: none;
   transition: 0.3s;
-  @include screen(mobile) {
+  @include screen(tablet) {
     height: 4px;
   }
 }

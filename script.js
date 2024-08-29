@@ -25,7 +25,7 @@ const splideOptions = {
       fixedHeight: "70vh",
       drag: true,
       arrows: false,
-      gap: "-10px",
+      gap: "-24px",
     },
     480: {
       fixedHeight: "60vh",
