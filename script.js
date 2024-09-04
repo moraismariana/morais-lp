@@ -14,7 +14,7 @@ function isInView(element) {
   return (
     rect.bottom > 0 &&
     rect.top <
-      (window.innerHeight - 150 || document.documentElement.clientHeight - 150)
+      (window.innerHeight - 100 || document.documentElement.clientHeight - 100)
   );
 }
 
@@ -28,6 +28,7 @@ const splideOptions = {
 
   interval: 5000,
   speed: 1100,
+  updateOnMove: true,
   focus: "center",
   slideFocus: true,
   type: "loop",
