@@ -35,6 +35,17 @@
     object-fit: cover;
     border-radius: 10px;
     transition: 0.3s;
+    &:nth-of-type(1) {
+      @include screen(tablet) {
+        display: none;
+      }
+    }
+    &:nth-of-type(2) {
+      display: none;
+      @include screen(tablet) {
+        display: block;
+      }
+    }
   }
 }
 
