@@ -90,3 +90,47 @@ img {
     opacity: 1;
   }
 }
+
+.whatsapp {
+  position: fixed;
+  background-color: $w;
+  top: calc(100vh - 20px - (16 * 2px) - 30px);
+  right: 30px;
+  height: 20px;
+  width: 20px;
+  padding: 16px;
+  border-radius: 50px;
+  z-index: 3;
+  box-shadow: 0px 4px 8px rgba(30, 30, 30, 0.1);
+  svg {
+    animation: sm-shake-animation linear 5s infinite;
+    animation-delay: 2s;
+  }
+}
+
+@keyframes sm-shake-animation {
+  0% {
+    transform: rotate(0) scale(1) skew(0.017rad);
+  }
+  88% {
+    transform: rotate(0) scale(1) skew(0.017rad);
+  }
+  90% {
+    transform: rotate(-0.3rad) scale(1) skew(0.017rad);
+  }
+  92% {
+    transform: rotate(0.3rad) scale(1) skew(0.017rad);
+  }
+  94% {
+    transform: rotate(-0.3rad) scale(1) skew(0.017rad);
+  }
+  96% {
+    transform: rotate(0.3rad) scale(1) skew(0.017rad);
+  }
+  98% {
+    transform: rotate(0) scale(1) skew(0.017rad);
+  }
+  100% {
+    transform: rotate(0) scale(1) skew(0.017rad);
+  }
+}
